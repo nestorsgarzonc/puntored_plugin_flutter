@@ -1,0 +1,45 @@
+PODS:
+  - Alamofire (4.8.2)
+  - Capable/Colors (1.1.4)
+  - Flutter (1.0.0)
+  - puntored_plugin_flutter (1.0.0):
+    - Alamofire (= 4.8.2)
+    - Flutter
+    - SheetyColors
+    - Socket.IO-Client-Swift (= 15.2.0)
+  - SheetyColors (1.2.1):
+    - Capable/Colors (~> 1.1)
+  - Socket.IO-Client-Swift (15.2.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.1)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - puntored_plugin_flutter (from `.symlinks/plugins/puntored_plugin_flutter/ios`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Capable
+    - SheetyColors
+    - Socket.IO-Client-Swift
+    - Starscream
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  puntored_plugin_flutter:
+    :path: ".symlinks/plugins/puntored_plugin_flutter/ios"
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Capable: 9f420f2a80a12144814ea2f0ba196516a0827ca1
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  puntored_plugin_flutter: a8085764a48469d1c621afea0f182dc70fa7702b
+  SheetyColors: a0273d30ec5ee02536bb43960ba36d58619ae719
+  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+
+PODFILE CHECKSUM: c34e2287a9ccaa606aeceab922830efb9a6ff69a
+
+COCOAPODS: 1.10.0.rc.1

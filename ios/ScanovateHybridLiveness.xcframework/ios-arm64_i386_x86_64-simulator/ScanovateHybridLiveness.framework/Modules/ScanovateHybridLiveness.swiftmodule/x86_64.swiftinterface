@@ -1,0 +1,266 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ScanovateHybridLiveness
+import AVFoundation
+import AudioToolbox
+import CoreMotion
+import CoreText
+import Foundation
+@_exported import ScanovateHybridLiveness
+import SocketIO
+import Swift
+import UIKit
+@objc @_hasMissingDesignatedInitializers public class SNLivenessVC : UIKit.UIViewController {
+  weak public var delegate: ScanovateHybridLiveness.SNLivenessVCDelegate?
+  public var customization: ScanovateHybridLiveness.SNLivenessUICustomization
+  @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {
+    @objc get
+  }
+  public init(connectionParams: ScanovateHybridLiveness.SNLivenessConnectionParams)
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @objc override dynamic public func viewDidLayoutSubviews()
+  @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+}
+public protocol SNLivenessVCDelegate : AnyObject {
+  func livenessVCSucceeded(_ livenessVC: UIKit.UIViewController, faceImage: UIKit.UIImage)
+  func livenessVCAbort(_ livenessVC: UIKit.UIViewController, reason: ScanovateHybridLiveness.SNLivenessAbortReason, optionalFaceImage: UIKit.UIImage?, optionalErrorDescription: Swift.String?)
+  func livenessVCCompleted(_ livenessVC: UIKit.UIViewController)
+}
+public enum SNLivenessAbortReason : Swift.CustomStringConvertible {
+  case userCanceled
+  case livenessFailed
+  case livenessTimeout
+  case cannotOpenCamera
+  case appGoesToBackground
+  case serverError
+  case connectionError
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: ScanovateHybridLiveness.SNLivenessAbortReason, b: ScanovateHybridLiveness.SNLivenessAbortReason) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public struct SNLivenessConnectionParams {
+  public var token: Swift.String?
+  public var secure: Swift.Bool
+  public var forcePolling: Swift.Bool
+  public var devMode: Swift.Bool
+  public var logToFile: Swift.Bool
+  public var socketIOClientConfiguration: SocketIO.SocketIOClientConfiguration?
+  public init(url: Foundation.URL, token: Swift.String, caseId: Swift.String) throws
+  public init(url: Foundation.URL, caseId: Swift.String) throws
+  public func getCaseId() -> Swift.String
+}
+public struct SNLivenessUICustomization {
+  public enum Side : Swift.Int {
+    case left
+    case right
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum CenterProgressType : Swift.Int {
+    case innerCircle
+    case outerOval
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum InstructionsPosition : Swift.Int {
+    case top
+    case bottom
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum BackButtonShape : Swift.Int {
+    case arrowHead
+    case arrowHeadAndTail
+    case x
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum DirectionSignShape : Swift.Int {
+    case arrow
+    case triangle
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public var instructionsPosition: ScanovateHybridLiveness.SNLivenessUICustomization.InstructionsPosition {
+    mutating get
+    set
+  }
+  public var instructionsFont: UIKit.UIFont? {
+    mutating get
+    set
+  }
+  public var instructionsUnderlineColor: UIKit.UIColor {
+    mutating get
+    set
+  }
+  public var lookAtCenterText: Swift.String {
+    mutating get
+    set
+  }
+  public var lookLeftText: Swift.String {
+    mutating get
+    set
+  }
+  public var lookRightText: Swift.String {
+    mutating get
+    set
+  }
+  public var initialAlignFaceText: Swift.String {
+    mutating get
+    set
+  }
+  public var ongoingAlignFaceText: Swift.String {
+    mutating get
+    set
+  }
+  public var comeCloserText: Swift.String {
+    mutating get
+    set
+  }
+  public var getFurtherText: Swift.String {
+    mutating get
+    set
+  }
+  public var multipleFacesFoundText: Swift.String {
+    mutating get
+    set
+  }
+  public var badFaceFocusText: Swift.String {
+    mutating get
+    set
+  }
+  public var faceIlluminationTooDarkText: Swift.String {
+    mutating get
+    set
+  }
+  public var faceIlluminationTooBrightText: Swift.String {
+    mutating get
+    set
+  }
+  public var facePositionNotStableText: Swift.String {
+    mutating get
+    set
+  }
+  public var sessionEndedSuccessfullyText: Swift.String {
+    mutating get
+    set
+  }
+  public var processingDataText: Swift.String {
+    mutating get
+    set
+  }
+  public var backButtonShape: ScanovateHybridLiveness.SNLivenessUICustomization.BackButtonShape {
+    mutating get
+    set
+  }
+  public var backButtonSide: ScanovateHybridLiveness.SNLivenessUICustomization.Side {
+    mutating get
+    set
+  }
+  public var backButtonColor: UIKit.UIColor {
+    mutating get
+    set
+  }
+  public var centerProgressType: ScanovateHybridLiveness.SNLivenessUICustomization.CenterProgressType {
+    mutating get
+    set
+  }
+  public var ovalProgressLineWidth: CoreGraphics.CGFloat {
+    mutating get
+    set
+  }
+  public var ovalProgressStartColor: UIKit.UIColor {
+    mutating get
+    set
+  }
+  public var ovalProgressFillColor: UIKit.UIColor {
+    mutating get
+    set
+  }
+  public var successSignColor: UIKit.UIColor {
+    mutating get
+    set
+  }
+  public var successSignBackgroundColor: UIKit.UIColor {
+    mutating get
+    set
+  }
+  public var directionSignColor: UIKit.UIColor {
+    mutating get
+    set
+  }
+  public var directionSignShape: ScanovateHybridLiveness.SNLivenessUICustomization.DirectionSignShape {
+    mutating get
+    set
+  }
+  public var nativeLoaderColor: UIKit.UIColor {
+    mutating get
+    set
+  }
+  public var nativeLoaderTransformScale: CoreGraphics.CGFloat {
+    mutating get
+    set
+  }
+  public var customLoaderImages: [UIKit.UIImage]?
+  public var customLoaderDurationPerImage: Swift.Double {
+    mutating get
+    set
+  }
+  public var customLoaderImagesHeight: CoreGraphics.CGFloat {
+    mutating get
+    set
+  }
+  public var instructionsUpdatesMinimumDelayedTime: Swift.Double {
+    mutating get
+    set
+  }
+  public var displayBackCamera: Swift.Bool {
+    mutating get
+    set
+  }
+  public init()
+}
+extension ScanovateHybridLiveness.SNLivenessAbortReason : Swift.Equatable {}
+extension ScanovateHybridLiveness.SNLivenessAbortReason : Swift.Hashable {}
+extension ScanovateHybridLiveness.SNLivenessUICustomization.Side : Swift.Equatable {}
+extension ScanovateHybridLiveness.SNLivenessUICustomization.Side : Swift.Hashable {}
+extension ScanovateHybridLiveness.SNLivenessUICustomization.Side : Swift.RawRepresentable {}
+extension ScanovateHybridLiveness.SNLivenessUICustomization.CenterProgressType : Swift.Equatable {}
+extension ScanovateHybridLiveness.SNLivenessUICustomization.CenterProgressType : Swift.Hashable {}
+extension ScanovateHybridLiveness.SNLivenessUICustomization.CenterProgressType : Swift.RawRepresentable {}
+extension ScanovateHybridLiveness.SNLivenessUICustomization.InstructionsPosition : Swift.Equatable {}
+extension ScanovateHybridLiveness.SNLivenessUICustomization.InstructionsPosition : Swift.Hashable {}
+extension ScanovateHybridLiveness.SNLivenessUICustomization.InstructionsPosition : Swift.RawRepresentable {}
+extension ScanovateHybridLiveness.SNLivenessUICustomization.BackButtonShape : Swift.Equatable {}
+extension ScanovateHybridLiveness.SNLivenessUICustomization.BackButtonShape : Swift.Hashable {}
+extension ScanovateHybridLiveness.SNLivenessUICustomization.BackButtonShape : Swift.RawRepresentable {}
+extension ScanovateHybridLiveness.SNLivenessUICustomization.DirectionSignShape : Swift.Equatable {}
+extension ScanovateHybridLiveness.SNLivenessUICustomization.DirectionSignShape : Swift.Hashable {}
+extension ScanovateHybridLiveness.SNLivenessUICustomization.DirectionSignShape : Swift.RawRepresentable {}

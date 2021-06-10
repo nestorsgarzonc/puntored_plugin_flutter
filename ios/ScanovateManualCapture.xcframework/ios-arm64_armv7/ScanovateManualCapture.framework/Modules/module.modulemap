@@ -1,0 +1,11 @@
+framework module ScanovateManualCapture {
+  umbrella header "ScanovateManualCapture.h"
+
+  export *
+  module * { export * }
+}
+
+module ScanovateManualCapture.Swift {
+    header "ScanovateManualCapture-Swift.h"
+    requires objc
+}
