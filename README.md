@@ -1,14 +1,14 @@
-# Flutter Scanovate Plugin
+# Flutter Adotech Scanovate Plugin
 
 
-A Flutter plugin for iOS and Android allowing access to the Scanovate API.
+A Flutter plugin for iOS and Android allowing access to the Scanovate API now with null safety.
 
 ## Installation
 
 First, add scanovateplugin as a dependency in your pubspec.yaml file.
 
 `dependencies:
-  puntored_plugin_flutter: ^1.0.2`
+  puntored_plugin_flutter: ^2.0.0`
   
 then import package
 
