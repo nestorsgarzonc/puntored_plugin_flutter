@@ -9,8 +9,8 @@ class Flutterscanovateplugin {
   /// get the platform version.
   ///
 
-  static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
+  static Future<String?> get platformVersion async {
+    final String? version = await _channel.invokeMethod('getPlatformVersion');
     return version;
   }
 
@@ -28,7 +28,7 @@ class Flutterscanovateplugin {
   /// @param documentType the password field.
   /// @returns The response in json string format.
 
-  static Future<String> callScanovate(
+  static Future<String?> callScanovate(
       bool verification,
       String documentType,
       int productId,
@@ -38,7 +38,7 @@ class Flutterscanovateplugin {
       String documentNumber,
       String userName,
       String password) async {
-    final String response = await _channel.invokeMethod('callScanovate', {
+    final String? response = await _channel.invokeMethod('callScanovate', {
       "data": {
         'documentType': documentType,
         'productId': productId,

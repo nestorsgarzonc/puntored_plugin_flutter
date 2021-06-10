@@ -1,10 +1,10 @@
 name: puntored_plugin_flutter
 description: ADO API plugin for flutter ios and android, this plugin let you call the API
-version: 1.0.2
+version: 2.0.0
 homepage: "https://ado-tech.com"
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
   flutter: ">=1.10.0"
 
 dependencies:
