@@ -11,3 +11,7 @@
 
 * change over instruction readme.
 
+## 2.0.0
+
+* Migrated to null safety.
+
