@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:puntored_plugin_flutter/puntored_plugin_flutter.dart';
+import 'package:adotech_puntopay/adotech_puntopay.dart';
 
 void main() {
   const MethodChannel channel = MethodChannel('flutterscanovateplugin');
