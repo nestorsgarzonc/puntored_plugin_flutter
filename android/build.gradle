@@ -18,7 +18,7 @@ rootProject.allprojects {
         google()
         jcenter()
         flatDir {
-            dirs project(':puntored_plugin_flutter').file('libs')
+            dirs project(':adotech_puntopay').file('libs')
             // e.g. dirs project(':url_launcher').file('libs')  - don't miss the ':'
         }
     }
@@ -56,7 +56,7 @@ dependencies {
         // excluding org.json which is provided by Android
         exclude group: 'org.json', module: 'json'
     }
-
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
     implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
