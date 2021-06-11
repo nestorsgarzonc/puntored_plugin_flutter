@@ -2,6 +2,7 @@ name: adotech_puntopay
 description: ADO API plugin for flutter ios and android, this plugin let you call the API
 version: 2.0.0
 homepage: "https://ado-tech.com"
+repository: https://github.com/nestorsgarzonc/puntored_plugin_flutter
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
