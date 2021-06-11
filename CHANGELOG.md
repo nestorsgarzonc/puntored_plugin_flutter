@@ -14,4 +14,10 @@
 ## 2.0.0
 
 * Migrated to null safety.
+## 2.0.1
+
+* Fix in build.gradle.
+## 2.0.2
+
+* Fix in build.gradle x2.
 

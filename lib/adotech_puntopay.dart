@@ -3,7 +3,8 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 
 class Flutterscanovateplugin {
-  static const MethodChannel _channel = const MethodChannel('flutterscanovateplugin');
+  static const MethodChannel _channel =
+      const MethodChannel('flutterscanovateplugin');
 
   /// get the platform version.
   ///
