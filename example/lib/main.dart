@@ -22,9 +22,9 @@ class _MyAppState extends State<MyApp> {
 
   String documentType = "1";
   int productId = 1;
-  String projectName = "PuntoRedQA";
+  String projectName = "puntoredqa";
   String apiKey = "db92efc69991";
-  String urlSdk = "https://adocolumbia.ado-tech.com/PuntoRedQa/api/";
+  String urlSdk = "https://adocolombia-qa.ado-tech.com/puntoredqa/api/";
   String documentNumber;
   bool verification = false;
   String userName = "";
@@ -59,16 +59,8 @@ class _MyAppState extends State<MyApp> {
     try {
       documentNumber = documentNumberController.text;
 
-      response = await Flutterscanovateplugin.callScanovate(
-          verification,
-          documentType,
-          productId,
-          projectName,
-          apiKey,
-          urlSdk,
-          documentNumber,
-          userName,
-          password);
+      response = await Flutterscanovateplugin.callScanovate(verification, documentType, productId,
+          projectName, apiKey, urlSdk, documentNumber, userName, password);
     } on PlatformException {
       response = 'Failed to get platform version.';
     }
@@ -129,8 +121,7 @@ class _MyAppState extends State<MyApp> {
                             _scanovate(context);
                           });
                         },
-                        child: const Text('Enrolar',
-                            style: TextStyle(fontSize: 20)),
+                        child: const Text('Enrolar', style: TextStyle(fontSize: 20)),
                       )
                     : SizedBox(),
                 !pressedValidate
@@ -141,8 +132,7 @@ class _MyAppState extends State<MyApp> {
                             pressedValidate = true;
                           });
                         },
-                        child: const Text('Verificar',
-                            style: TextStyle(fontSize: 20)),
+                        child: const Text('Verificar', style: TextStyle(fontSize: 20)),
                       )
                     : SizedBox(),
                 pressedValidate
@@ -163,8 +153,7 @@ class _MyAppState extends State<MyApp> {
                         onPressed: () {
                           _scanovate(context);
                         },
-                        child: const Text('Enviar',
-                            style: TextStyle(fontSize: 20)),
+                        child: const Text('Enviar', style: TextStyle(fontSize: 20)),
                       )
                     : SizedBox(),
                 pressedValidate
@@ -174,8 +163,7 @@ class _MyAppState extends State<MyApp> {
                             pressedValidate = false;
                           });
                         },
-                        child: const Text('Volver',
-                            style: TextStyle(fontSize: 20)),
+                        child: const Text('Volver', style: TextStyle(fontSize: 20)),
                       )
                     : SizedBox()
               ],

@@ -21,3 +21,9 @@
 
 * Fix in build.gradle x2.
 
+## 2.1.0
+
+* Working on android.
+
+
+
