@@ -2,7 +2,10 @@
 
 
 A Flutter plugin for iOS and Android allowing access to the Scanovate API now with null safety.
+## Docs
 
+https://adocolumbia.ado-tech.com/documentation/sdkandroidios.html
+https://adocolumbia.ado-tech.com/documentation/serviciosRest.html
 ## Installation
 
 First, add scanovateplugin as a dependency in your pubspec.yaml file.
@@ -19,7 +22,7 @@ the plugin returns the response in json string format.
 Add two rows to the `ios/Runner/Info.plist:`
 
 * one with the key `Privacy - Camera Usage Description` and a usage description.
-* and one with the key `Privacy - Location When In Use Usage Description` and a usage description.
+* and one with the key `Privacy - Location When In Use Usage Description` and a usage description.I
 
 Or in text format add the key:
 
