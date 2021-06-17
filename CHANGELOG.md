@@ -27,6 +27,9 @@
 ## 2.1.1
 
 * Fix in podspect
+## 2.1.2
+
+* To adotech_puntopay
 
 
 

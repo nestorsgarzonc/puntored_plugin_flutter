@@ -3,7 +3,7 @@
 # Run `pod lib lint scanovateplugin.podspec' to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'puntored_plugin_flutter'
+  s.name             = 'adotech_puntopay'
   s.version          = '1.0.0'
   s.summary          = 'Scanovate plugin for flutter'
   s.description      = <<-DESC
