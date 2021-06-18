@@ -30,6 +30,9 @@
 ## 2.1.2
 
 * To adotech_puntopay
+## 2.1.3
+
+* Added iOS dependencies
 
 
 
