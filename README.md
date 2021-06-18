@@ -2,10 +2,7 @@
 
 
 A Flutter plugin for iOS and Android allowing access to the Scanovate API now with null safety.
-## Docs
 
-https://adocolumbia.ado-tech.com/documentation/sdkandroidios.html
-https://adocolumbia.ado-tech.com/documentation/serviciosRest.html
 ## Installation
 
 First, add scanovateplugin as a dependency in your pubspec.yaml file.
