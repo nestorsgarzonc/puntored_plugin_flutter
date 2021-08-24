@@ -33,6 +33,13 @@
 ## 2.1.3
 
 * Added iOS dependencies
+## 2.1.4
+
+* Swift to 2.4.3
+* Added iOS dependencies
+## 2.1.5
+
+* Rollback
 
 
 
