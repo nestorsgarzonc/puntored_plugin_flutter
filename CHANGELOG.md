@@ -40,6 +40,9 @@
 ## 2.1.5
 
 * Rollback
+## 2.1.6
+
+* Added dependency
 
 
 
