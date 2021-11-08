@@ -42,7 +42,7 @@
 * Rollback
 ## 2.1.6
 
-* Added dependency
+* Added missing dependency in android
 
 
 
