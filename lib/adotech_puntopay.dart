@@ -3,8 +3,7 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 
 class Flutterscanovateplugin {
-  static const MethodChannel _channel =
-      const MethodChannel('flutterscanovateplugin');
+  static const MethodChannel _channel = const MethodChannel('flutterscanovateplugin');
 
   /// get the platform version.
   ///
@@ -29,15 +28,17 @@ class Flutterscanovateplugin {
   /// @returns The response in json string format.
 
   static Future<String?> callScanovate(
-      bool verification,
-      String documentType,
-      int productId,
-      String projectName,
-      String apiKey,
-      String urlSdk,
-      String documentNumber,
-      String userName,
-      String password) async {
+    bool verification,
+    String documentType,
+    int productId,
+    String projectName,
+    String apiKey,
+    String urlSdk,
+    String documentNumber,
+    String userName,
+    String password, {
+    String other = '1',
+  }) async {
     final String? response = await _channel.invokeMethod('callScanovate', {
       "data": {
         'documentType': documentType,
@@ -48,7 +49,8 @@ class Flutterscanovateplugin {
         'documentNumber': documentNumber,
         'verification': verification,
         'userName': userName,
-        'password': password
+        'password': password,
+        'other': other,
       }
     });
     return response;

@@ -32,15 +32,16 @@ public class FlutterscanovatepluginPlugin implements FlutterPlugin, MethodCallHa
   Context context;
   Activity activity;
   String documentType;
-  int productId;
+  Integer productId;
   Boolean show_LevelerUI;
   String projectName;
   String apiKey;
   String urlSdk;
   String numberIdentification;
-  Boolean verification;
+  boolean verification;
   String userName;
   String password;
+  String other;
 
 
 
@@ -93,15 +94,16 @@ public class FlutterscanovatepluginPlugin implements FlutterPlugin, MethodCallHa
         HashMap ls_data;
         ls_data = call.argument("data");
         documentType = (String) ls_data.get("documentType");
-        productId = (int)ls_data.get("productId");
+        productId = (Integer)ls_data.get("productId");
         //show_LevelerUI = (Boolean)ls_data.get("show_LevelerUI");
         projectName = (String) ls_data.get("projectName");
         apiKey = (String) ls_data.get("apiKey");
         urlSdk = (String) ls_data.get("urlSdk");
         numberIdentification = (String)ls_data.get("documentNumber");
-        verification = (Boolean)ls_data.get("verification");
+        verification = (boolean)ls_data.get("verification");
         userName = (String) ls_data.get("userName");
         password = (String) ls_data.get("password");
+        other = (String) ls_data.get("other");
 
         capture(result);
     } else {
@@ -126,6 +128,7 @@ public class FlutterscanovatepluginPlugin implements FlutterPlugin, MethodCallHa
             verification,
             userName,
             password,
+            other,
             new ScanovateHandler() {
               @Override
               public void onSuccess(CloseResponse response, int code, String uuidDevice) {

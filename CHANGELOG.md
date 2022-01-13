@@ -44,5 +44,9 @@
 
 * Added missing dependency in android
 
+## 2.2.0
+
+* Updated sdk in Android
+
 
 
