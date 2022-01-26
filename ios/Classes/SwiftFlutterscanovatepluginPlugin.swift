@@ -13,6 +13,7 @@ public class SwiftFlutterscanovatepluginPlugin: NSObject, FlutterPlugin {
     public var res: FlutterResult? = nil
     public var userName: String = ""
     public var password: String = ""
+    public var riskId: String = ""
     
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "flutterscanovateplugin", binaryMessenger: registrar.messenger())
@@ -42,6 +43,7 @@ public class SwiftFlutterscanovatepluginPlugin: NSObject, FlutterPlugin {
                 verification = (data["verification"] as? Bool)!
                 userName = (data["userName"] as? String)!
                 password = (data["password"] as? String)!
+                riskId = (data["riskId"] as? String)!
                    
                 } else {
                   result("iOS could not extract flutter arguments in method: (sendParams)")
@@ -65,7 +67,8 @@ public class SwiftFlutterscanovatepluginPlugin: NSObject, FlutterPlugin {
                               identification: numberId,
                               validation: verification,
                               userName: userName,
-                              password: password)
+                              password: password,
+                              riskId: riskId)
         let smManagerVC = SMManager.initWith(delegate: self, params: params)
         UIApplication.shared.keyWindow?.rootViewController?.present(smManagerVC, animated: true, completion: nil);
     }
@@ -346,9 +349,6 @@ open class JSONSerializer {
            let prettyJsonData = try! JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted)
            json = NSString(data: prettyJsonData, encoding: String.Encoding.utf8.rawValue)! as String
         }
-        
         return json
     }
-    
-    
 }

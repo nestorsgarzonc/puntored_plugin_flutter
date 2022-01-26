@@ -6,123 +6,119 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		hyKA3FCc6rmj+C9ZeFmS9E9cfkQ=
+		fTSVb2go0ggaBypgqE9p7QmXm3w=
 		</data>
-		<key>AttempsViewController.nib</key>
+		<key>DocViewController.nib/objects-13.0+.nib</key>
 		<data>
-		kUs0UNPPQ04ScZbq6M772wgw67s=
+		xpAMMCBP3XdMR9coQ3w2hYjUSJE=
 		</data>
-		<key>DocViewController.nib</key>
+		<key>DocViewController.nib/runtime.nib</key>
 		<data>
-		cgIu2cffIlO5SV1ATc2OokrDAKU=
+		T1rhdGJf7KMExwSheHuL6skbl+Q=
 		</data>
-		<key>ErrorViewController.nib</key>
+		<key>FaceViewController.nib/objects-13.0+.nib</key>
 		<data>
-		MJG4to0sjb9VFnSMomjri9CQO/g=
+		7Dv/VSePwOd4nJ9VjM0BeAUZ0gY=
 		</data>
-		<key>FaceViewController.nib</key>
+		<key>FaceViewController.nib/runtime.nib</key>
 		<data>
-		EasX3oEZWBmbmqrQTBEeWABoEX4=
+		NkWLNFhzS6xHlndkOwSIAhySCxY=
 		</data>
 		<key>Headers/SMSDK-Swift.h</key>
 		<data>
-		tj0cwZKnDEgV7ToDcxC8GcYKl/U=
+		KbvYYzzqFTzoza5muenAY9ZC6bw=
 		</data>
 		<key>Headers/SMSDK.h</key>
 		<data>
-		XzJx7CYiuo3VUMVoQcDSKSU0is8=
+		5JkZXIxfm51OTvS+VxZM4TjqBXw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MJBhacbb8K1yr+pB/xEvqyiS/0I=
+		/tR3rC7P1enSzZNyk0sPWeruCFo=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		CuP7jW+aAX+d8oZA6jwlvDJiSBw=
+		5Ef2BmyTvK3+cSCKCqnC+zF/cxE=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		CuP7jW+aAX+d8oZA6jwlvDJiSBw=
+		5Ef2BmyTvK3+cSCKCqnC+zF/cxE=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		zupBeqB/ZBzAC4Zw0u45jWN2r+M=
+		hqR2zipgSOFBbuNCE4M2dlkXebI=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		zupBeqB/ZBzAC4Zw0u45jWN2r+M=
+		hqR2zipgSOFBbuNCE4M2dlkXebI=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Ye73bVKd6LFYu9SkqDbnr+VSCao=
+		7nWeqw6++Sx+JMAnaR9GPSQgBB4=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Sl0TKhDdG61pbE7UKLdC1ynHpYA=
+		K13h3U6P2Yi8+71/uhor6vjMxwg=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QKjuMXTTYu04iu6NGlkIp8kD8o0=
+		41ygOreKkRYsjZyg1qt6edemn+A=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		Ye73bVKd6LFYu9SkqDbnr+VSCao=
+		7nWeqw6++Sx+JMAnaR9GPSQgBB4=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		Sl0TKhDdG61pbE7UKLdC1ynHpYA=
+		K13h3U6P2Yi8+71/uhor6vjMxwg=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		QKjuMXTTYu04iu6NGlkIp8kD8o0=
+		41ygOreKkRYsjZyg1qt6edemn+A=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		dwXMauVolx0I7WyhlmCHA95k4jU=
+		wanUJhYonMThwlm53gkQm9xW740=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		00XvHGTlP2/ZGPvEP3j7PWkvT90=
+		jMizuxXm6OcrwEW2jF1hLmRbxE8=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TJOOI5wP65Ao8yUt0djVW5l8s5Y=
+		zzLwsfQ6XK0hzpNxyG5D7C9M5Bk=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		dwXMauVolx0I7WyhlmCHA95k4jU=
+		wanUJhYonMThwlm53gkQm9xW740=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		00XvHGTlP2/ZGPvEP3j7PWkvT90=
+		jMizuxXm6OcrwEW2jF1hLmRbxE8=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		TJOOI5wP65Ao8yUt0djVW5l8s5Y=
+		zzLwsfQ6XK0hzpNxyG5D7C9M5Bk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		aH69iNeKBtoPLg52GSYmhzTV8Qc=
 		</data>
-		<key>NoInternetViewController.nib</key>
+		<key>NoInternetViewController.nib/objects-13.0+.nib</key>
 		<data>
-		KB2DswkRw4DjP7qfhQ1ZVKfKpsw=
+		/bqOLsdOlOSeZs1lcJNHaB0/D9s=
 		</data>
-		<key>Quicksand.ttf</key>
+		<key>NoInternetViewController.nib/runtime.nib</key>
 		<data>
-		7fpzSNVoarUw9OCi/qxqqb0C8Jw=
+		SCM7tm0dZZsuFl50wxaswrVeLgs=
 		</data>
-		<key>back.gif</key>
+		<key>goldplay-bold.ttf</key>
 		<data>
-		XdI3DQ2bQXhOSVSZ+hK0y4FuMqg=
+		+WXb/bE/5CDsCPCjVVoAqVF02Ow=
 		</data>
-		<key>front.gif</key>
+		<key>goldplay-semibold.ttf</key>
 		<data>
-		UhUHDDMdv/ht5p93TuqsouCGSzk=
-		</data>
-		<key>image.gif</key>
-		<data>
-		mvLeBzoLnicRUM/oTxLwWMK2+XU=
+		Wer+GYWCpBnjSTCyqLEBacqmDqE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -131,161 +127,161 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7oLRUboSDQarXNj/qpaeqX9OVqmzQ3XI7fBiIgH2Lqs=
+			3qKFTiNQ4Y+ax4icS4CTHvSrMqili8uhyYk8hKTTu9Q=
 			</data>
 		</dict>
-		<key>AttempsViewController.nib</key>
+		<key>DocViewController.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d+JabpID7pLmgAT+zJUBj7I/EQFopmxbX2Ax+pBDZfY=
+			0cXYLXW8Bz2al051n9ID30ho83y1qNwuo3gP3GYWkG0=
 			</data>
 		</dict>
-		<key>DocViewController.nib</key>
+		<key>DocViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ApfXcvJAQsoq5LRahfAHhdNqmGhvUR45qz/Suuo+fZ8=
+			Q79K6Kj2tiNpQRdLnB9xS9o6ua6RTa/htPWZwKGlC54=
 			</data>
 		</dict>
-		<key>ErrorViewController.nib</key>
+		<key>FaceViewController.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yLdsijzKc0KwI4Y9R/69X/xE7A87iTaa9Afy9Rim2Ig=
+			q9NGSRVxI/VsKPJ6fU3vFnkGbNlKO9JnZcYGwDmF48g=
 			</data>
 		</dict>
-		<key>FaceViewController.nib</key>
+		<key>FaceViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J04K+B2FzsbfzbLm7RShEzCLIHcpvr1Rqi2pqF1necw=
+			QNC3mJxdyGNWpFfT4HUx6dgyZrOZhU/DlMG6Wqh/zZU=
 			</data>
 		</dict>
 		<key>Headers/SMSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uZ4RzTc+i0DpZruiUUhYzxf42wKIdH2/kxA4HKNZIVs=
+			Ye4DzO+FirXbDuOWzHbotwj6ziohvQ3fTpIiIuFolDk=
 			</data>
 		</dict>
 		<key>Headers/SMSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yrkTfSqznNHfo27amwhHvYIx9qfM1OWSAnWKuiZvpFg=
+			1doD67PTfPt8/tg2SKltE2g9kprDsZZa+l1SzQE01UQ=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/XTSxByP/jqOmd2waGdidqcwKolHnpZD3QtFxbrNzK8=
+			UqeSTyQ/dHgIBD9D2JGhbAvqTmh9/QE9MMpg6IKL0l0=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/XTSxByP/jqOmd2waGdidqcwKolHnpZD3QtFxbrNzK8=
+			UqeSTyQ/dHgIBD9D2JGhbAvqTmh9/QE9MMpg6IKL0l0=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yjH7/1vqk0dd3cY0yrDqVV/2uO4E1YZtoQG3z5XJLK4=
+			IEL5nHHHA0C2ZmllgDQ6xOc1k+npiI5tsel1f/tYZSE=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yjH7/1vqk0dd3cY0yrDqVV/2uO4E1YZtoQG3z5XJLK4=
+			IEL5nHHHA0C2ZmllgDQ6xOc1k+npiI5tsel1f/tYZSE=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SGsUtP1Ng8oDXd9iaiBETh15dfd5HR603B1DfSENp7s=
+			bHUnnJH62tBn+ZihZmCNiEahup+/RYlSNn7kxiuinFI=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CteWDDGDEX6dMEiHUxP1yFOOA0nrXFjDVFqSk+NScjk=
+			dlsxqNWdJCKoyMAusOKAr/oXbtauQZFRefOLOsBqx5o=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6lW5UJ2KI2VaXLyIga1B9korFTtDyoj9y/pGoyKytZA=
+			hZYwVqGTEnIkvpUr5LCfzbsd2AS+ZM1c1UnKG2+CvU8=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SGsUtP1Ng8oDXd9iaiBETh15dfd5HR603B1DfSENp7s=
+			bHUnnJH62tBn+ZihZmCNiEahup+/RYlSNn7kxiuinFI=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CteWDDGDEX6dMEiHUxP1yFOOA0nrXFjDVFqSk+NScjk=
+			dlsxqNWdJCKoyMAusOKAr/oXbtauQZFRefOLOsBqx5o=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6lW5UJ2KI2VaXLyIga1B9korFTtDyoj9y/pGoyKytZA=
+			hZYwVqGTEnIkvpUr5LCfzbsd2AS+ZM1c1UnKG2+CvU8=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vj8J+1omQwJsIX2qNjADen7c9GSF0iHZvAl5L08m3xE=
+			g4ToRZCq1Bea6DzxGAyJNWtjjgXBvuspLsmfVABCuN0=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uih4/A+ElO2cLukxksk5pyEt0uU2OhzvyiTcL0kAj+o=
+			2NRudkJJZ/m0VfWxNnrzw86eXZe/Nh19Ye9ue5fnxgE=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ts+QyCUdYKr6JA/cPmfT+84qHV1AlivWViwr+jfnK1c=
+			n0hIq/sj+7WtuFRFh8cfy1nxdjNevafh/XV+aX8/ib0=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vj8J+1omQwJsIX2qNjADen7c9GSF0iHZvAl5L08m3xE=
+			g4ToRZCq1Bea6DzxGAyJNWtjjgXBvuspLsmfVABCuN0=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uih4/A+ElO2cLukxksk5pyEt0uU2OhzvyiTcL0kAj+o=
+			2NRudkJJZ/m0VfWxNnrzw86eXZe/Nh19Ye9ue5fnxgE=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ts+QyCUdYKr6JA/cPmfT+84qHV1AlivWViwr+jfnK1c=
+			n0hIq/sj+7WtuFRFh8cfy1nxdjNevafh/XV+aX8/ib0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -295,39 +291,32 @@
 			bTPfBc4lb7pgcksgwrKWqGSa10/iTYwjnsBvIyeFfZU=
 			</data>
 		</dict>
-		<key>NoInternetViewController.nib</key>
+		<key>NoInternetViewController.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IFJOJCNA5k8R8Af1khhTtq2Mez3O4EEbu2Yg1/inmdY=
+			wK/GFDH+abJFRMH/kQm9JbU/U1/5tXCjq0QvvOil9Bs=
 			</data>
 		</dict>
-		<key>Quicksand.ttf</key>
+		<key>NoInternetViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3WEr3PaP3lFTnW5iEL/Iw+je9pp7CJ8mGfSkFnzOht8=
+			WRseCCvfj44Ds/qyjTfhgACdXKzuRCflm+EG3uSu8qI=
 			</data>
 		</dict>
-		<key>back.gif</key>
+		<key>goldplay-bold.ttf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ocN9KNvKZC76EMR511qr7z+wa/p9JqUPRT/neeyYHj4=
+			yZcrkJjwCfOeB2yECdN1Q4DUWudhvws06aym0Nxq2UQ=
 			</data>
 		</dict>
-		<key>front.gif</key>
+		<key>goldplay-semibold.ttf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			orwS0QDvCOrnOG+i+R+QXo3hu+wV9njDNg+lVf/x9vc=
-			</data>
-		</dict>
-		<key>image.gif</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			uK3qt/YfpEVvc74oj8VoM/nn/dMZ9Q8/tg1Z+VpYgjQ=
+			jXJZi1DdxLYyTmbUiWah53n+jY1aHcIXIDgfWipHOPw=
 			</data>
 		</dict>
 	</dict>

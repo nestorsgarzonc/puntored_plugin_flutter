@@ -47,6 +47,10 @@
 ## 2.2.0
 
 * Updated sdk in Android
+* 
+* ## 2.3.0
+
+* Updated sdk in iOS
 
 
 

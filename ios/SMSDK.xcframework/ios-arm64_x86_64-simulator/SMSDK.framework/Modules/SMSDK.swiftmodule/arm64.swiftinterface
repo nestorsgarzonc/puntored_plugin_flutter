@@ -1,16 +1,59 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SMSDK
 import AVFoundation
 import Alamofire
 import CoreLocation
 import Foundation
-import ImageIO
 @_exported import SMSDK
-import ScanovateHybridLiveness
+import SafariServices
 import ScanovateManualCapture
 import Swift
 import UIKit
+import WebKit
+import _Concurrency
+public struct SMParams {
+  public var documentType: Swift.String
+  public var productId: Swift.String
+  public var projectName: Swift.String
+  public var apiKey: Swift.String
+  public var urlSdk: Swift.String
+  public var identification: Swift.String
+  public var validation: Swift.Bool
+  public var userName: Swift.String
+  public var password: Swift.String
+  public var riskId: Swift.String
+  public init(documentType: Swift.String, productId: Swift.String, projectName: Swift.String, apiKey: Swift.String, urlSdk: Swift.String, identification: Swift.String, validation: Swift.Bool, userName: Swift.String, password: Swift.String, riskId: Swift.String)
+}
+public struct Payload : Swift.Decodable {
+  public var threshold: Swift.Double?
+  public var score: Swift.Double?
+  public var images: SMSDK.Images?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Stages : Swift.Decodable {
+  public var order: Swift.Int?
+  public var type: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct StagesResponse : Swift.Decodable {
+  public var action_type: Swift.String?
+  public var stage: SMSDK.Stages?
+  public var payload: SMSDK.Payload?
+  public var status: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ServiceError {
+  public var error400: Swift.String
+  public var error401: Swift.String
+  public var error404: Swift.String
+  public var error404Customer: Swift.String
+  public var error500: Swift.String
+  public var defaultMessage: Swift.String
+  public var backButton: Swift.String
+  public var error: Swift.Bool
+  public func responseObjectError(_ type: Swift.String) -> SMSDK.TransactionResponse
+}
 public struct TransactionResponse : Swift.Decodable {
   public var Uid: Swift.String?
   public var StartingDate: Swift.String?
@@ -56,16 +99,88 @@ public struct TransactionResponse : Swift.Decodable {
   public var Response_ANI: Swift.String?
   public init(from decoder: Swift.Decoder) throws
 }
+public struct Face {
+  public var title: Swift.String
+  public var message: Swift.String
+  public var titleScreen: Swift.String
+  public var subtitleMessage: Swift.String
+  public var almostDoneMessage: Swift.String
+  public var alreadyRegisteredMessage: Swift.String
+  public var takeAnotherPhotoButton: Swift.String
+  public var startButton: Swift.String
+  public var continueButton: Swift.String
+  public var alerts: SMSDK.FaceAlert
+  public var centerImage1: UIKit.UIImage?
+  public var titleTips: Swift.String
+  public var message1: Swift.String
+  public var message2: Swift.String
+  public var message3: Swift.String
+  public var next: Swift.String
+  public var confirm: Swift.String
+}
+public struct FaceAlert {
+  public var getLocationCancel: Swift.String
+  public var getLocationGoToSettings: Swift.String
+  public var getLocationErrorTitle: Swift.String
+  public var getLocationPermissions: Swift.String
+  public var getLocationCantGoToSettings: Swift.String
+  public var getConfigCancelAction: Swift.String
+  public var getConfigTryAgainAction: Swift.String
+  public var getConfigErrorTitle: Swift.String
+  public var getConfigErrorMessage: Swift.String
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
+}
+public struct Liveness {
+  public var lookAtCenterText: Swift.String
+  public var lookLeftText: Swift.String
+  public var lookRightText: Swift.String
+  public var initialAlignFaceText: Swift.String
+  public var ongoingAlignFaceText: Swift.String
+  public var comeCloserText: Swift.String
+  public var getFurtherText: Swift.String
+  public var multipleFacesFoundText: Swift.String
+  public var sessionEndedSuccessfullyText: Swift.String
+  public var processingDataText: Swift.String
+  public var badFaceFocusText: Swift.String
+  public var faceIlluminationTooDarkText: Swift.String
+  public var faceIlluminationTooBrightText: Swift.String
+  public var facePositionNotStableText: Swift.String
+  public var urlErrorTitle: Swift.String
+  public var urlErrorMessage: Swift.String
+  public var catchErrorTitle: Swift.String
+  public var delegateMessage: SMSDK.LivenessDelegateMessage
+}
+public struct LivenessDelegateMessage {
+  public var abortUserCanceled: Swift.String
+  public var abortFailed: Swift.String
+  public var abortTimeout: Swift.String
+  public var abortCantOpenCamera: Swift.String
+  public var abortAppGoesToBackground: Swift.String
+  public var abortServerError: Swift.String
+  public var abortConnectionError: Swift.String
+  public var errorLivenessCanceled: Swift.String
+  public var livenessVCCompleted: Swift.String
+}
+public struct Images : Swift.Decodable {
+  public var face_image: Swift.String?
+  public var input_image: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+}
 public enum DocumentType {
   case citizenshipID
   case identityCard
   case foreignerID
   case passport
   public static func == (a: SMSDK.DocumentType, b: SMSDK.DocumentType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
+}
+public protocol SMDelegate : AnyObject {
+  func completedWithResult(result: Swift.Bool, response: SMSDK.TransactionResponse?)
 }
 public struct ExtrasResponse : Swift.Decodable {
   public var additionalProp1: Swift.String?
@@ -75,16 +190,24 @@ public struct ExtrasResponse : Swift.Decodable {
   public var StateName: Swift.String?
   public init(from decoder: Swift.Decoder) throws
 }
-public struct ServiceError {
-  public var error400: Swift.String
-  public var error401: Swift.String
-  public var error404: Swift.String
-  public var error404Customer: Swift.String
-  public var error500: Swift.String
-  public var defaultMessage: Swift.String
-  public var backButton: Swift.String
-  public var error: Swift.Bool
-  public func responseObjectError(_ type: Swift.String) -> SMSDK.TransactionResponse
+public struct ResponseCapture : Swift.Decodable {
+  public var action_type: Swift.String?
+  public var status: Swift.String?
+  public var stages: [SMSDK.StagesResponse]
+  public var caseId: Swift.String?
+  public var configFilename: Swift.String?
+  public var success: Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Errors {
+  public var attempsTitle: Swift.String
+  public var attempsMessage1: Swift.String
+  public var attempsMessage2: Swift.String
+  public var noMoreAttempsMessage: Swift.String
+  public var noInternetTitle: Swift.String
+  public var noInternetMessage: Swift.String
+  public var invalidRegistrationMessage: Swift.String
+  public var tryAgainButton: Swift.String
 }
 public struct Document {
   public var titleScreen: Swift.String
@@ -125,106 +248,11 @@ public struct Document {
   public var next: Swift.String
   public var confirm: Swift.String
 }
-public struct Errors {
-  public var attempsTitle: Swift.String
-  public var attempsMessage1: Swift.String
-  public var attempsMessage2: Swift.String
-  public var noMoreAttempsMessage: Swift.String
-  public var noInternetTitle: Swift.String
-  public var noInternetMessage: Swift.String
-  public var invalidRegistrationMessage: Swift.String
-  public var tryAgainButton: Swift.String
-}
-public protocol SMDelegate : AnyObject {
-  func completedWithResult(result: Swift.Bool, response: SMSDK.TransactionResponse?)
-}
-extension UIImageView {
-  public func loadGif(name: Swift.String)
-  @available(iOS 9.0, *)
-  public func loadGif(asset: Swift.String)
-}
-extension UIImage {
-  public class func gif(data: Foundation.Data) -> UIKit.UIImage?
-  public class func gif(url: Swift.String) -> UIKit.UIImage?
-  public class func gif(name: Swift.String) -> UIKit.UIImage?
-  @available(iOS 9.0, *)
-  public class func gif(asset: Swift.String) -> UIKit.UIImage?
-}
-public struct Face {
-  public var title: Swift.String
-  public var message: Swift.String
-  public var titleScreen: Swift.String
-  public var subtitleMessage: Swift.String
-  public var almostDoneMessage: Swift.String
-  public var alreadyRegisteredMessage: Swift.String
-  public var takeAnotherPhotoButton: Swift.String
-  public var startButton: Swift.String
-  public var continueButton: Swift.String
-  public var alerts: SMSDK.FaceAlert
-  public var centerImage1: UIKit.UIImage?
-  public var titleTips: Swift.String
-  public var message1: Swift.String
-  public var message2: Swift.String
-  public var message3: Swift.String
-  public var next: Swift.String
-  public var confirm: Swift.String
-}
-public struct FaceAlert {
-  public var getLocationCancel: Swift.String
-  public var getLocationGoToSettings: Swift.String
-  public var getLocationErrorTitle: Swift.String
-  public var getLocationPermissions: Swift.String
-  public var getLocationCantGoToSettings: Swift.String
-  public var getConfigCancelAction: Swift.String
-  public var getConfigTryAgainAction: Swift.String
-  public var getConfigErrorTitle: Swift.String
-  public var getConfigErrorMessage: Swift.String
-}
-public struct SMParams {
-  public var documentType: Swift.String
-  public var productId: Swift.String
-  public var projectName: Swift.String
-  public var apiKey: Swift.String
-  public var urlSdk: Swift.String
-  public var identification: Swift.String
-  public var validation: Swift.Bool
-  public var userName: Swift.String
-  public var password: Swift.String
-  public init(documentType: Swift.String, productId: Swift.String, projectName: Swift.String, apiKey: Swift.String, urlSdk: Swift.String, identification: Swift.String, validation: Swift.Bool, userName: Swift.String, password: Swift.String)
-}
-public struct Liveness {
-  public var lookAtCenterText: Swift.String
-  public var lookLeftText: Swift.String
-  public var lookRightText: Swift.String
-  public var initialAlignFaceText: Swift.String
-  public var ongoingAlignFaceText: Swift.String
-  public var comeCloserText: Swift.String
-  public var getFurtherText: Swift.String
-  public var multipleFacesFoundText: Swift.String
-  public var sessionEndedSuccessfullyText: Swift.String
-  public var processingDataText: Swift.String
-  public var badFaceFocusText: Swift.String
-  public var faceIlluminationTooDarkText: Swift.String
-  public var faceIlluminationTooBrightText: Swift.String
-  public var facePositionNotStableText: Swift.String
-  public var urlErrorTitle: Swift.String
-  public var urlErrorMessage: Swift.String
-  public var catchErrorTitle: Swift.String
-  public var delegateMessage: SMSDK.LivenessDelegateMessage
-}
-public struct LivenessDelegateMessage {
-  public var abortUserCanceled: Swift.String
-  public var abortFailed: Swift.String
-  public var abortTimeout: Swift.String
-  public var abortCantOpenCamera: Swift.String
-  public var abortAppGoesToBackground: Swift.String
-  public var abortServerError: Swift.String
-  public var abortConnectionError: Swift.String
-  public var errorLivenessCanceled: Swift.String
-  public var livenessVCCompleted: Swift.String
-}
-extension UIDevice {
-  public static let modelName: Swift.String
+public struct NoSuccessResponse : Swift.Decodable {
+  public var name: Swift.String?
+  public var message: Swift.String?
+  public var code: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class SMManager {
   public static let customization: SMSDK.SMManager

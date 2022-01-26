@@ -2,7 +2,7 @@
 //  SMSDK.h
 //  SMSDK
 //
-//  Created by Gerard Amortegui on 22/02/21.
+//  Created by Jeyson on 19/08/21.
 //
 
 #import <Foundation/Foundation.h>

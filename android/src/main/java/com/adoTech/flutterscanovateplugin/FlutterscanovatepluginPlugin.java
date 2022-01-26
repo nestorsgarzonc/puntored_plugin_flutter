@@ -41,8 +41,7 @@ public class FlutterscanovatepluginPlugin implements FlutterPlugin, MethodCallHa
   boolean verification;
   String userName;
   String password;
-  String other;
-
+  String riskId;
 
 
   @Override
@@ -103,7 +102,7 @@ public class FlutterscanovatepluginPlugin implements FlutterPlugin, MethodCallHa
         verification = (boolean)ls_data.get("verification");
         userName = (String) ls_data.get("userName");
         password = (String) ls_data.get("password");
-        other = (String) ls_data.get("other");
+        riskId = (String) ls_data.get("riskId");
 
         capture(result);
     } else {
@@ -128,7 +127,7 @@ public class FlutterscanovatepluginPlugin implements FlutterPlugin, MethodCallHa
             verification,
             userName,
             password,
-            other,
+            riskId,
             new ScanovateHandler() {
               @Override
               public void onSuccess(CloseResponse response, int code, String uuidDevice) {

@@ -1,0 +1,123 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ScanovateManualCapture
+import AVFoundation
+@_exported import ScanovateManualCapture
+import Swift
+import UIKit
+@objc @_hasMissingDesignatedInitializers public class SNManualCaptureVC : UIKit.UIViewController {
+  weak public var delegate: ScanovateManualCapture.SNManualCaptureVCDelegate?
+  public var captureBothSides: Swift.Bool
+  public var uiCustomization: ScanovateManualCapture.SNManualCaptureUICustomization
+  public var showResult: Swift.Bool
+  @objc override dynamic public var shouldAutorotate: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public init()
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @objc override dynamic public func viewDidLayoutSubviews()
+  @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+}
+extension SNManualCaptureVC : ScanovateManualCapture.SNManualCaptureResultVCDelegate {
+  public func didTapRetry(_ manualCaptureResultVC: ScanovateManualCapture.SNManualCaptureResultVC)
+  public func didTapOK(_ manualCaptureResultVC: ScanovateManualCapture.SNManualCaptureResultVC, fronSideImage: UIKit.UIImage, backSideImage: UIKit.UIImage?)
+}
+public protocol SNManualCaptureVCDelegate : AnyObject {
+  func manualCaptureSucceeded(_ captureVC: ScanovateManualCapture.SNManualCaptureVC, frontSideImage: UIKit.UIImage, backSideImage: UIKit.UIImage?)
+  func manualCaptureAborted(_ captureVC: ScanovateManualCapture.SNManualCaptureVC, reason: ScanovateManualCapture.SNManualCapturerAbortReason)
+}
+public enum SNManualCapturerAbortReason : Swift.CustomStringConvertible {
+  case userCanceled
+  case appGoesToBackground
+  case cannotOpenCamera
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: ScanovateManualCapture.SNManualCapturerAbortReason, b: ScanovateManualCapture.SNManualCapturerAbortReason) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@objc @_inheritsConvenienceInitializers public class SNManualCaptureUICustomization : ObjectiveC.NSObject {
+  public enum SNPosition {
+    case top
+    case middle
+    case bottom
+    public static func == (a: ScanovateManualCapture.SNManualCaptureUICustomization.SNPosition, b: ScanovateManualCapture.SNManualCaptureUICustomization.SNPosition) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public enum SNSide {
+    case left
+    case right
+    public static func == (a: ScanovateManualCapture.SNManualCaptureUICustomization.SNSide, b: ScanovateManualCapture.SNManualCaptureUICustomization.SNSide) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public enum SNBackButtonShape {
+    case arrowHead
+    case arrowHeadAndTail
+    case x
+    public static func == (a: ScanovateManualCapture.SNManualCaptureUICustomization.SNBackButtonShape, b: ScanovateManualCapture.SNManualCaptureUICustomization.SNBackButtonShape) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  public var mainColor: UIKit.UIColor
+  public var captureFrontInstructionsText: Swift.String
+  public var captureBackInstructionsText: Swift.String
+  public var changeSidePopupTitleText: Swift.String
+  public var changeSidePopupButtonText: Swift.String
+  public var backArrowSide: ScanovateManualCapture.SNManualCaptureUICustomization.SNSide
+  public var backArrowShape: ScanovateManualCapture.SNManualCaptureUICustomization.SNBackButtonShape
+  public var backArrowColor: UIKit.UIColor
+  public var instructionsFont: UIKit.UIFont?
+  public var instructionsColor: UIKit.UIColor
+  public var instructionsBackgroundColor: UIKit.UIColor
+  public var instructionsPosition: ScanovateManualCapture.SNManualCaptureUICustomization.SNPosition
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class SNManualCaptureResultVC : UIKit.UIViewController {
+  weak public var delegate: ScanovateManualCapture.SNManualCaptureResultVCDelegate?
+  public var uiCustomization: ScanovateManualCapture.SNManualCaptureUICustomization
+  @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  @objc override dynamic public var prefersStatusBarHidden: Swift.Bool {
+    @objc get
+  }
+  public init(image: UIKit.UIImage, backImage: UIKit.UIImage?)
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc deinit
+}
+public protocol SNManualCaptureResultVCDelegate : AnyObject {
+  func didTapOK(_ manualCaptureResultVC: ScanovateManualCapture.SNManualCaptureResultVC, fronSideImage: UIKit.UIImage, backSideImage: UIKit.UIImage?)
+  func didTapRetry(_ manualCaptureResultVC: ScanovateManualCapture.SNManualCaptureResultVC)
+}
+extension ScanovateManualCapture.SNManualCapturerAbortReason : Swift.Equatable {}
+extension ScanovateManualCapture.SNManualCapturerAbortReason : Swift.Hashable {}
+extension ScanovateManualCapture.SNManualCaptureUICustomization.SNPosition : Swift.Equatable {}
+extension ScanovateManualCapture.SNManualCaptureUICustomization.SNPosition : Swift.Hashable {}
+extension ScanovateManualCapture.SNManualCaptureUICustomization.SNSide : Swift.Equatable {}
+extension ScanovateManualCapture.SNManualCaptureUICustomization.SNSide : Swift.Hashable {}
+extension ScanovateManualCapture.SNManualCaptureUICustomization.SNBackButtonShape : Swift.Equatable {}
+extension ScanovateManualCapture.SNManualCaptureUICustomization.SNBackButtonShape : Swift.Hashable {}

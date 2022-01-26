@@ -37,7 +37,7 @@ class Flutterscanovateplugin {
     String documentNumber,
     String userName,
     String password, {
-    String other = '1',
+    String riskId = '1',
   }) async {
     final String? response = await _channel.invokeMethod('callScanovate', {
       "data": {
@@ -50,7 +50,7 @@ class Flutterscanovateplugin {
         'verification': verification,
         'userName': userName,
         'password': password,
-        'other': other,
+        'other': riskId,
       }
     });
     return response;

@@ -1,0 +1,268 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SMSDK
+import AVFoundation
+import Alamofire
+import CoreLocation
+import Foundation
+@_exported import SMSDK
+import SafariServices
+import ScanovateManualCapture
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+public struct SMParams {
+  public var documentType: Swift.String
+  public var productId: Swift.String
+  public var projectName: Swift.String
+  public var apiKey: Swift.String
+  public var urlSdk: Swift.String
+  public var identification: Swift.String
+  public var validation: Swift.Bool
+  public var userName: Swift.String
+  public var password: Swift.String
+  public var riskId: Swift.String
+  public init(documentType: Swift.String, productId: Swift.String, projectName: Swift.String, apiKey: Swift.String, urlSdk: Swift.String, identification: Swift.String, validation: Swift.Bool, userName: Swift.String, password: Swift.String, riskId: Swift.String)
+}
+public struct Payload : Swift.Decodable {
+  public var threshold: Swift.Double?
+  public var score: Swift.Double?
+  public var images: SMSDK.Images?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Stages : Swift.Decodable {
+  public var order: Swift.Int?
+  public var type: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct StagesResponse : Swift.Decodable {
+  public var action_type: Swift.String?
+  public var stage: SMSDK.Stages?
+  public var payload: SMSDK.Payload?
+  public var status: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ServiceError {
+  public var error400: Swift.String
+  public var error401: Swift.String
+  public var error404: Swift.String
+  public var error404Customer: Swift.String
+  public var error500: Swift.String
+  public var defaultMessage: Swift.String
+  public var backButton: Swift.String
+  public var error: Swift.Bool
+  public func responseObjectError(_ type: Swift.String) -> SMSDK.TransactionResponse
+}
+public struct TransactionResponse : Swift.Decodable {
+  public var Uid: Swift.String?
+  public var StartingDate: Swift.String?
+  public var CreationDate: Swift.String?
+  public var CreationIP: Swift.String?
+  public var DocumentType: Swift.Int?
+  public var IdNumber: Swift.String?
+  public var FirstName: Swift.String?
+  public var SecondName: Swift.String?
+  public var FirstSurname: Swift.String?
+  public var SecondSurname: Swift.String?
+  public var Gender: Swift.String?
+  public var BirthDate: Swift.String?
+  public var Street: Swift.String?
+  public var CedulateCondition: Swift.String?
+  public var Spouse: Swift.String?
+  public var Home: Swift.String?
+  public var MaritalStatus: Swift.String?
+  public var DateOfIdentification: Swift.String?
+  public var DateOfDeath: Swift.String?
+  public var MarriageDate: Swift.String?
+  public var Instruction: Swift.String?
+  public var PlaceBirth: Swift.String?
+  public var Nationality: Swift.String?
+  public var MotherName: Swift.String?
+  public var FatherName: Swift.String?
+  public var HouseNumber: Swift.String?
+  public var Profession: Swift.String?
+  public var ExpeditionCity: Swift.String?
+  public var ExpeditionDepartment: Swift.String?
+  public var BirthCity: Swift.String?
+  public var BirthDepartment: Swift.String?
+  public var TransactionType: Swift.Int?
+  public var TransactionTypeName: Swift.String?
+  public var IssueDate: Swift.String?
+  public var AdoProjectId: Swift.String?
+  public var TransactionId: Swift.String?
+  public var ProductId: Swift.String?
+  public var Extras: SMSDK.ExtrasResponse?
+  public var NumberPhone: Swift.String?
+  public var DactilarCode: Swift.String?
+  public var ReponseControlList: Swift.Bool?
+  public var Response_ANI: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Face {
+  public var title: Swift.String
+  public var message: Swift.String
+  public var titleScreen: Swift.String
+  public var subtitleMessage: Swift.String
+  public var almostDoneMessage: Swift.String
+  public var alreadyRegisteredMessage: Swift.String
+  public var takeAnotherPhotoButton: Swift.String
+  public var startButton: Swift.String
+  public var continueButton: Swift.String
+  public var alerts: SMSDK.FaceAlert
+  public var centerImage1: UIKit.UIImage?
+  public var titleTips: Swift.String
+  public var message1: Swift.String
+  public var message2: Swift.String
+  public var message3: Swift.String
+  public var next: Swift.String
+  public var confirm: Swift.String
+}
+public struct FaceAlert {
+  public var getLocationCancel: Swift.String
+  public var getLocationGoToSettings: Swift.String
+  public var getLocationErrorTitle: Swift.String
+  public var getLocationPermissions: Swift.String
+  public var getLocationCantGoToSettings: Swift.String
+  public var getConfigCancelAction: Swift.String
+  public var getConfigTryAgainAction: Swift.String
+  public var getConfigErrorTitle: Swift.String
+  public var getConfigErrorMessage: Swift.String
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
+}
+public struct Liveness {
+  public var lookAtCenterText: Swift.String
+  public var lookLeftText: Swift.String
+  public var lookRightText: Swift.String
+  public var initialAlignFaceText: Swift.String
+  public var ongoingAlignFaceText: Swift.String
+  public var comeCloserText: Swift.String
+  public var getFurtherText: Swift.String
+  public var multipleFacesFoundText: Swift.String
+  public var sessionEndedSuccessfullyText: Swift.String
+  public var processingDataText: Swift.String
+  public var badFaceFocusText: Swift.String
+  public var faceIlluminationTooDarkText: Swift.String
+  public var faceIlluminationTooBrightText: Swift.String
+  public var facePositionNotStableText: Swift.String
+  public var urlErrorTitle: Swift.String
+  public var urlErrorMessage: Swift.String
+  public var catchErrorTitle: Swift.String
+  public var delegateMessage: SMSDK.LivenessDelegateMessage
+}
+public struct LivenessDelegateMessage {
+  public var abortUserCanceled: Swift.String
+  public var abortFailed: Swift.String
+  public var abortTimeout: Swift.String
+  public var abortCantOpenCamera: Swift.String
+  public var abortAppGoesToBackground: Swift.String
+  public var abortServerError: Swift.String
+  public var abortConnectionError: Swift.String
+  public var errorLivenessCanceled: Swift.String
+  public var livenessVCCompleted: Swift.String
+}
+public struct Images : Swift.Decodable {
+  public var face_image: Swift.String?
+  public var input_image: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum DocumentType {
+  case citizenshipID
+  case identityCard
+  case foreignerID
+  case passport
+  public static func == (a: SMSDK.DocumentType, b: SMSDK.DocumentType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol SMDelegate : AnyObject {
+  func completedWithResult(result: Swift.Bool, response: SMSDK.TransactionResponse?)
+}
+public struct ExtrasResponse : Swift.Decodable {
+  public var additionalProp1: Swift.String?
+  public var additionalProp2: Swift.String?
+  public var additionalProp3: Swift.String?
+  public var IdState: Swift.String?
+  public var StateName: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ResponseCapture : Swift.Decodable {
+  public var action_type: Swift.String?
+  public var status: Swift.String?
+  public var stages: [SMSDK.StagesResponse]
+  public var caseId: Swift.String?
+  public var configFilename: Swift.String?
+  public var success: Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Errors {
+  public var attempsTitle: Swift.String
+  public var attempsMessage1: Swift.String
+  public var attempsMessage2: Swift.String
+  public var noMoreAttempsMessage: Swift.String
+  public var noInternetTitle: Swift.String
+  public var noInternetMessage: Swift.String
+  public var invalidRegistrationMessage: Swift.String
+  public var tryAgainButton: Swift.String
+}
+public struct Document {
+  public var titleScreen: Swift.String
+  public var subtitleMessage: Swift.String
+  public var isOkMessage: Swift.String
+  public var beSureMessage: Swift.String
+  public var citizenshipIDFrontTitle: Swift.String
+  public var identityCardFrontTitle: Swift.String
+  public var foreignerIDFrontTitle: Swift.String
+  public var passportFrontTitle: Swift.String
+  public var citizenshipIDFrontMessage: Swift.String
+  public var identityCardFrontMessage: Swift.String
+  public var foreignerIDFrontMessage: Swift.String
+  public var passportFrontMessage: Swift.String
+  public var citizenshipIDBackTitle: Swift.String
+  public var identityCardBackTitle: Swift.String
+  public var foreignerIDBackTitle: Swift.String
+  public var passportBackTitle: Swift.String
+  public var citizenshipIDBackMessage: Swift.String
+  public var identityCardBackMessage: Swift.String
+  public var foreignerIDBackMessage: Swift.String
+  public var passportBackMessage: Swift.String
+  public var alreadyRegisteredMessage: Swift.String
+  public var clearDocumentessage: Swift.String
+  public var takePhotoButton: Swift.String
+  public var continueButton: Swift.String
+  public var takeAnotherPhotoButton: Swift.String
+  public var scanAgain: Swift.String
+  public var invalidTitleFront: Swift.String
+  public var invalidTitleBack: Swift.String
+  public var invalidMessageFront: Swift.String
+  public var invalidMessageBack: Swift.String
+  public var backButton: Swift.String
+  public var centerImage1: UIKit.UIImage?
+  public var centerImage2: UIKit.UIImage?
+  public var message2: Swift.String
+  public var message3: Swift.String
+  public var next: Swift.String
+  public var confirm: Swift.String
+}
+public struct NoSuccessResponse : Swift.Decodable {
+  public var name: Swift.String?
+  public var message: Swift.String?
+  public var code: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class SMManager {
+  public static let customization: SMSDK.SMManager
+  public var face: SMSDK.Face
+  public var document: SMSDK.Document
+  public var liveness: SMSDK.Liveness
+  public var errors: SMSDK.Errors
+  public var serviceErrors: SMSDK.ServiceError
+  public static func initWith(delegate: SMSDK.SMDelegate, params: SMSDK.SMParams) -> UIKit.UIViewController
+  @objc deinit
+}
+extension SMSDK.DocumentType : Swift.Equatable {}
+extension SMSDK.DocumentType : Swift.Hashable {}
