@@ -51,6 +51,9 @@
 * ## 2.3.0
 
 * Updated sdk in iOS
+* ## 2.3.2
+
+* Fix sdk in iOS
 
 
 

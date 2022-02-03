@@ -6,23 +6,15 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		NI3xvzrqAGaBef6rXGpMBDv2TVc=
+		SfPtLCyZeK1AizlDDogR0bOyisU=
 		</data>
-		<key>DocViewController.nib/objects-13.0+.nib</key>
+		<key>DocViewController.nib</key>
 		<data>
 		xpAMMCBP3XdMR9coQ3w2hYjUSJE=
 		</data>
-		<key>DocViewController.nib/runtime.nib</key>
+		<key>FaceViewController.nib</key>
 		<data>
-		T1rhdGJf7KMExwSheHuL6skbl+Q=
-		</data>
-		<key>FaceViewController.nib/objects-13.0+.nib</key>
-		<data>
-		7Dv/VSePwOd4nJ9VjM0BeAUZ0gY=
-		</data>
-		<key>FaceViewController.nib/runtime.nib</key>
-		<data>
-		NkWLNFhzS6xHlndkOwSIAhySCxY=
+		XOvejgjNSAf8bAAegNSeTuZW1rE=
 		</data>
 		<key>Headers/SMSDK-Swift.h</key>
 		<data>
@@ -34,51 +26,39 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5JPpvM74JbWwaDxnfZEBdFSN/Kg=
-		</data>
-		<key>Modules/SMSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
-		<data>
-		xg4xPhMr+7mKormSwQTSGwg6Bvw=
-		</data>
-		<key>Modules/SMSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		xg4xPhMr+7mKormSwQTSGwg6Bvw=
+		PJpp4Pq1zI3jS42Q6fUUkrYTi48=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		eZjlOvlKhsleq7axYVtsSFtb9m4=
+		C4qC6M5Of1X5hQw2mk3EI+VfE3U=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		T8adA0Gb71ZawCUDxHTYS+Calrw=
+		V2kBH8wrWu6/L1IKdd9ak4/5jJU=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		IEH1Z3HQ8Ly1X4mlN7kcM618y5M=
+		anw1XLPM8q4R82DTx74FDSIRQeY=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		eZjlOvlKhsleq7axYVtsSFtb9m4=
+		C4qC6M5Of1X5hQw2mk3EI+VfE3U=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		T8adA0Gb71ZawCUDxHTYS+Calrw=
+		V2kBH8wrWu6/L1IKdd9ak4/5jJU=
 		</data>
 		<key>Modules/SMSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		IEH1Z3HQ8Ly1X4mlN7kcM618y5M=
+		anw1XLPM8q4R82DTx74FDSIRQeY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		aH69iNeKBtoPLg52GSYmhzTV8Qc=
 		</data>
-		<key>NoInternetViewController.nib/objects-13.0+.nib</key>
+		<key>NoInternetViewController.nib</key>
 		<data>
 		/bqOLsdOlOSeZs1lcJNHaB0/D9s=
-		</data>
-		<key>NoInternetViewController.nib/runtime.nib</key>
-		<data>
-		SCM7tm0dZZsuFl50wxaswrVeLgs=
 		</data>
 		<key>goldplay-bold.ttf</key>
 		<data>
@@ -95,35 +75,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2UIurJKHaM/XCRycNlo6OewPP4WmzIq9p5AbTywusoM=
+			WF7XAPR6QrLrJ4wkzZ2B+qFiCxjmAXh/aYHV4sSwths=
 			</data>
 		</dict>
-		<key>DocViewController.nib/objects-13.0+.nib</key>
+		<key>DocViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			0cXYLXW8Bz2al051n9ID30ho83y1qNwuo3gP3GYWkG0=
 			</data>
 		</dict>
-		<key>DocViewController.nib/runtime.nib</key>
+		<key>FaceViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q79K6Kj2tiNpQRdLnB9xS9o6ua6RTa/htPWZwKGlC54=
-			</data>
-		</dict>
-		<key>FaceViewController.nib/objects-13.0+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			q9NGSRVxI/VsKPJ6fU3vFnkGbNlKO9JnZcYGwDmF48g=
-			</data>
-		</dict>
-		<key>FaceViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QNC3mJxdyGNWpFfT4HUx6dgyZrOZhU/DlMG6Wqh/zZU=
+			NFrfa04FfkxQpH3nSixjr5v8/LBk8eDfhix+eVdshVs=
 			</data>
 		</dict>
 		<key>Headers/SMSDK-Swift.h</key>
@@ -140,60 +106,46 @@
 			1doD67PTfPt8/tg2SKltE2g9kprDsZZa+l1SzQE01UQ=
 			</data>
 		</dict>
-		<key>Modules/SMSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YK9l8NEOrfHk5uF6zU/1qR9CN2fHdwE0A5N4xwXROTg=
-			</data>
-		</dict>
-		<key>Modules/SMSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YK9l8NEOrfHk5uF6zU/1qR9CN2fHdwE0A5N4xwXROTg=
-			</data>
-		</dict>
 		<key>Modules/SMSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cJAPbH6k3BQpyvZpzQdRcSkfC5/aTzhj9dhks75z/G0=
+			FjBCdYzx1es5r7DwbXoCv08uQ3TyqhTd9BY66VTkfc4=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wAl2Kn/rPcW2LNMsUUYeCHelTlXG/+0DLbZ3VH7tOgo=
+			+7n92Iyho8VebEooqf0LsJ5NytjgE/2ij34+1nsW04Y=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6IZvtAIdoo4pn3wt24SmhLSG0VCm/8wnYGabj6Hhc9M=
+			c3PjESCxAdRlkt4KGASYvOME+XTCGVAyoJj0eAzc2b0=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cJAPbH6k3BQpyvZpzQdRcSkfC5/aTzhj9dhks75z/G0=
+			FjBCdYzx1es5r7DwbXoCv08uQ3TyqhTd9BY66VTkfc4=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wAl2Kn/rPcW2LNMsUUYeCHelTlXG/+0DLbZ3VH7tOgo=
+			+7n92Iyho8VebEooqf0LsJ5NytjgE/2ij34+1nsW04Y=
 			</data>
 		</dict>
 		<key>Modules/SMSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6IZvtAIdoo4pn3wt24SmhLSG0VCm/8wnYGabj6Hhc9M=
+			c3PjESCxAdRlkt4KGASYvOME+XTCGVAyoJj0eAzc2b0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -203,18 +155,11 @@
 			bTPfBc4lb7pgcksgwrKWqGSa10/iTYwjnsBvIyeFfZU=
 			</data>
 		</dict>
-		<key>NoInternetViewController.nib/objects-13.0+.nib</key>
+		<key>NoInternetViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			wK/GFDH+abJFRMH/kQm9JbU/U1/5tXCjq0QvvOil9Bs=
-			</data>
-		</dict>
-		<key>NoInternetViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			WRseCCvfj44Ds/qyjTfhgACdXKzuRCflm+EG3uSu8qI=
 			</data>
 		</dict>
 		<key>goldplay-bold.ttf</key>

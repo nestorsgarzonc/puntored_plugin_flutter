@@ -50,7 +50,7 @@ class Flutterscanovateplugin {
         'verification': verification,
         'userName': userName,
         'password': password,
-        'other': riskId,
+        'riskId': riskId,
       }
     });
     return response;
